@@ -1,11 +1,11 @@
 import Container from './Container/Container';
-import Feedback from './Feedback/Feedback';
+import Phonebook from './Phonebook/Phonebook';
 
 export const App = () => {
   return (
     <>
       <Container>
-        <Feedback/>
+        <Phonebook/>
       </Container>
     </>
   );
