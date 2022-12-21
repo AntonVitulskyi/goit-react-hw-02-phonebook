@@ -9,11 +9,11 @@ export default function ContactList({
   filter,
   onClickDeleteContact,
 }) {
-  let filteredContacts = contacts.filter(contact => {
+  const filteredContacts = contacts.filter(contact => {
     return contact.name
       .toLowerCase()
       .trim()
-      .includes(`${filter}`.toLowerCase().trim());
+      .includes(filter.toLowerCase().trim());
   });
 
   return (
